@@ -79,12 +79,22 @@ use std::cmp::Ordering;
 //     }
 // }
 
+// fn main() {
+//     let mut my_age = 25;
+//     let can_vote = if my_age >= 18{
+//         true
+//     } else {
+//         false
+//     };
+//     println!("Can Vote : {}", can_vote);
+// }
+
 fn main() {
-    let mut my_age = 25;
-    let can_vote = if my_age >= 18{
-        true
-    } else {
-        false
+    let age2 = 25;
+    match age2 {
+        1..=18 => print!("Important Birthday"),
+        21 | 50 => print!("Important Birthday"),
+        65..=i32::MAX => print!("Important Birthday"),
+        _ => print!("Not an Important Birthday"),
     };
-    println!("Can Vote : {}", can_vote);
 }
