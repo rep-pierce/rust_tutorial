@@ -50,13 +50,18 @@ use std::cmp::Ordering;
 //     println!("f364 : {}", num_2 + 0.111111111111111); //answer: f64 : 1.2222222222222219
 // }
 
+// fn main() {
+//     let mut num_3: u32 = 5;
+//     let num_4: u32 = 4;
+//     println!("5 + 4 = {}", num_3 + num_4);
+//     println!("5 - 4 = {}", num_3 - num_4);
+//     println!("5 * 4 = {}", num_3 * num_4);
+//     println!("5 / 4 = {}", num_3 / num_4);
+//     println!("5 % 4 = {}", num_3 % num_4);
+//     num_3 += 1; //can be done with any of the above math operators so like num_3 *= 3
+// }
+
 fn main() {
-    let mut num_3: u32 = 5;
-    let num_4: u32 = 4;
-    println!("5 + 4 = {}", num_3 + num_4);
-    println!("5 - 4 = {}", num_3 - num_4);
-    println!("5 * 4 = {}", num_3 * num_4);
-    println!("5 / 4 = {}", num_3 / num_4);
-    println!("5 % 4 = {}", num_3 % num_4);
-    num_3 += 1; //can be done with any of the above math operators so like num_3 *= 3
+    let random_num = rand::thread_rng().gen_range(1..101);
+    println!("Random Number: {}", random_num);
 }
