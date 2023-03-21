@@ -99,12 +99,18 @@ use std::cmp::Ordering;
 //     };
 // }
 
+// fn main() {
+//     let my_age = 19;
+//     let voting_age = 18;
+//     match my_age.cmp(&voting_age){
+//         Ordering::Less => print!("Can't Vote"),
+//         Ordering::Greater => print!("Can Vote"),
+//         Ordering::Equal => print!("You gained the right to vote"),
+//     };
+// }
+
 fn main() {
-    let my_age = 19;
-    let voting_age = 18;
-    match my_age.cmp(&voting_age){
-        Ordering::Less => print!("Can't Vote"),
-        Ordering::Greater => print!("Can Vote"),
-        Ordering::Equal => print!("You gained the right to vote"),
-    };
+    let arr_1 = [1,2,3,4];
+    println!("1st : {}", arr_1[0]);
+    println!("Length : {}", arr_1.len());
 }
