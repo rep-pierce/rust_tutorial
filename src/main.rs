@@ -38,7 +38,14 @@ use std::cmp::Ordering;
 //     println!("Max f64 : {}", f64::MAX);
 // }
 
+// fn main() {
+//     let is_true = true;
+//     let my_grade = 'A';
+// }
+
 fn main() {
-    let is_true = true;
-    let my_grade = 'A';
+    let num_1: f32 = 1.111111111111111;
+    println!("f32 : {}", num_1 + 0.111111111111111); //answer: f32 : 1.2222223
+    let num_2: f64 = 1.111111111111111;
+    println!("f364 : {}", num_2 + 0.111111111111111); //answer: f64 : 1.2222222222222219
 }
