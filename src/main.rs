@@ -89,12 +89,22 @@ use std::cmp::Ordering;
 //     println!("Can Vote : {}", can_vote);
 // }
 
+// fn main() {
+//     let age2 = 25;
+//     match age2 {
+//         1..=18 => print!("Important Birthday"),
+//         21 | 50 => print!("Important Birthday"),
+//         65..=i32::MAX => print!("Important Birthday"),
+//         _ => print!("Not an Important Birthday"),
+//     };
+// }
+
 fn main() {
-    let age2 = 25;
-    match age2 {
-        1..=18 => print!("Important Birthday"),
-        21 | 50 => print!("Important Birthday"),
-        65..=i32::MAX => print!("Important Birthday"),
-        _ => print!("Not an Important Birthday"),
+    let my_age = 19;
+    let voting_age = 18;
+    match my_age.cmp(&voting_age){
+        Ordering::Less => print!("Can't Vote"),
+        Ordering::Greater => print!("Can Vote"),
+        Ordering::Equal => print!("You gained the right to vote"),
     };
 }
