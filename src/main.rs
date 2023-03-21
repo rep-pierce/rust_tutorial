@@ -140,10 +140,17 @@ use std::cmp::Ordering;
 //     }
 // }
 
+// fn main() {
+//     let arr_2 = [1,2,3,4,5,6,7,8,9];
+//     let mut loop_idx = 0;
+//     for val in arr_2.iter() {
+//         println!("Val : {}", val);
+//     }
+// }
+
 fn main() {
-    let arr_2 = [1,2,3,4,5,6,7,8,9];
-    let mut loop_idx = 0;
-    for val in arr_2.iter() {
-        println!("Val : {}", val);
-    }
+    let my_tuple: (u8, String, f64) = (25, "Ryan".to_string(), 50_000.00);
+    println!("Name : {}", my_tuple.1);
+    let(v1, v2, v3) = my_tuple;
+    println!("Age : {}", v1);
 }
