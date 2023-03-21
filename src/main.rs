@@ -61,7 +61,20 @@ use std::cmp::Ordering;
 //     num_3 += 1; //can be done with any of the above math operators so like num_3 *= 3
 // }
 
+// fn main() {
+//     let random_num = rand::thread_rng().gen_range(1..101);
+//     println!("Random Number: {}", random_num);
+// }
+
 fn main() {
-    let random_num = rand::thread_rng().gen_range(1..101);
-    println!("Random Number: {}", random_num);
+    let age = 8;
+    if (age >= 1) && (age <=18){
+        println!("Important Birthday");
+    } else if (age == 21) || (age == 50){
+        println!("Important Birthday");
+    } else if age >= 65 {
+        println!("Important Birthday");
+    } else {
+        println!("Not an Important Birthday");
+    }
 }
